@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/scripts/app.js',
     output: {
         path: path.resolve( __dirname, './dist/script'),
@@ -20,7 +20,8 @@ module.exports = {
                 loader: 'babel-loader',
                 options: {
                 presets: [
-                    ['@babel/preset-env']
+                    ['@babel/preset-env', 
+                    { useBuiltIns: 'usage', corejs: { version: 3 } } ]
                 ]
                 }
             }
