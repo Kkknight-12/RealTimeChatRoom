@@ -1,6 +1,5 @@
 import { chatRoom } from './chat'
 import { ChatUI } from './ui'
-// import 'core-js';
 
 const chatList = document.querySelector('.chat-list');
 const newChatForm = document.querySelector('.new-chat');
